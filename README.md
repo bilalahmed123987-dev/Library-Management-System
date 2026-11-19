@@ -203,31 +203,4 @@ library_management.exe
 
 The program creates or updates its data files in the working directory. Keep `library_requests.dat` and `activity.txt` in the project folder when you want to retain the saved records and activity log.
 
-## Suggested Repository Structure
-
-```text
-library_management_system/
-|
-|-- main.c
-|-- README.md
-|-- screenshots/
-|   |-- case1_admin_login.png
-|   |-- case2_student_registration_login.png
-|   |-- case3_book_administration.png
-|   |-- case4_book_issue_return.png
-|   |-- case5_book_availability_history.png
-|   |-- case6_student_administration.png
-|   |-- case7_room_lab_management.png
-|   |-- case8_student_requests.png
-|   |-- case9_request_approval_rejection.png
-|   |-- case10_fine_management.png
-|   |-- case11_complaint_management.png
-|   |-- case12_reports_analytics.png
-|   |-- case13_workflow_summary.png
-|   |-- case14_input_validation.png
-|   |-- case15_file_persistence.png
-|   |-- case15_activity_log.png
-|-- library_requests.dat   (created by the program)
-|-- activity.txt           (created by the program)
-```
 
