@@ -15,7 +15,7 @@ The **Library Management System** is a console-based application developed in th
 - **Expected Output:** Admin login succeeds and the Admin Panel is displayed. Incorrect credentials display an error and remaining attempts.
 - **Screenshot:**
 
-  ![Case 1 - Admin Login](screenshots/case1_admin_login.png)
+  ![Case 1 - Admin Login](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/3bc6c5e368cb73b382edaa87bf9a709612d36834/case1_admin_login.png)
 
 ### Case 2: Student Registration and Login
 
@@ -24,7 +24,7 @@ The **Library Management System** is a console-based application developed in th
 - **Expected Output:** Registration succeeds, a student ID is displayed, and valid login opens the Student Dashboard and Student Portal.
 - **Screenshot:**
 
-  ![Case 2 - Student Registration and Login](screenshots/case2_student_registration_login.png)
+  ![Case 2 - Student Registration and Login]()
 
 ### Case 3: Book Administration
 
