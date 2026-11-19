@@ -24,7 +24,7 @@ The **Library Management System** is a console-based application developed in th
 - **Expected Output:** Registration succeeds, a student ID is displayed, and valid login opens the Student Dashboard and Student Portal.
 - **Screenshot:**
 
-  ![Case 2 - Student Registration and Login]()
+  ![Case 2 - Student Registration and Login](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/main/case2_student_registration.png?raw=true)
 
 ### Case 3: Book Administration
 
@@ -33,7 +33,7 @@ The **Library Management System** is a console-based application developed in th
 - **Expected Output:** The book is added and displayed with its details and available copies. Search and update show the correct record. A book that has issued copies cannot be removed.
 - **Screenshot:**
 
-  ![Case 3 - Book Administration](screenshots/case3_book_administration.png)
+  ![Case 3 - Book Administration](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case3_book_administration.png)
 
 ### Case 4: Book Issue and Return
 
@@ -42,7 +42,7 @@ The **Library Management System** is a console-based application developed in th
 - **Expected Output:** The book is issued successfully and its available-copy count decreases. On return, the transaction is marked as returned and the available-copy count increases. A late return creates a fine at Rs. 10 per late day.
 - **Screenshot:**
 
-  ![Case 4 - Book Issue and Return](screenshots/case4_book_issue_return.png)
+  ![Case 4 - Book Issue and Return](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case4_book_issue_return.png)
 
 ### Case 5: Available Books and Transaction Records
 
@@ -51,7 +51,7 @@ The **Library Management System** is a console-based application developed in th
 - **Expected Output:** The program displays the matching books and transaction records, or a message when no matching records exist.
 - **Screenshot:**
 
-  ![Case 5 - Book Availability and History](screenshots/case5_book_availability_history.png)
+  ![Case 5 - Book Availability and History](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case5_book_availability_history.png)
 
 ### Case 6: Student Records Management
 
@@ -60,7 +60,7 @@ The **Library Management System** is a console-based application developed in th
 - **Expected Output:** Student details are saved and displayed correctly. Search and update work for an existing student. A student with an active issued book cannot be removed until the book is returned.
 - **Screenshot:**
 
-  ![Case 6 - Student Administration](screenshots/case6_student_administration.png)
+  ![Case 6 - Student Administration](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case6_student_administration.png)
 
 ### Case 7: Room and Computer-Lab Management
 
@@ -69,7 +69,7 @@ The **Library Management System** is a console-based application developed in th
 - **Expected Output:** The room/lab is added. Free and booked slots are displayed. A free slot can be booked, and a booked slot can be released. The program prevents booking an already-booked slot.
 - **Screenshot:**
 
-  ![Case 7 - Room and Lab Management](screenshots/case7_room_lab_management.png)
+  ![Case 7 - Room and Lab Management](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case7_room_lab_management.png)
 
 ### Case 8: Student Book and Room Requests
 
@@ -78,7 +78,8 @@ The **Library Management System** is a console-based application developed in th
 - **Expected Output:** A request ID is generated and its status is shown as Pending until an administrator processes it. Duplicate pending room-slot requests are prevented.
 - **Screenshot:**
 
-  ![Case 8 - Student Requests](screenshots/case8_student_requests.png)
+  ![Case 8 - Student Requests](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case8_book_request.png)
+  ![Case 8 - Student Requests](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case8_student_dashboard_pending.png)
 
 ### Case 9: Admin Request Approval and Rejection
 
@@ -87,7 +88,8 @@ The **Library Management System** is a console-based application developed in th
 - **Expected Output:** The request status changes to Approved or Rejected. An approved book request creates an issue transaction; an approved room request books its selected slot.
 - **Screenshot:**
 
-  ![Case 9 - Request Approval and Rejection](screenshots/case9_request_approval_rejection.png)
+  ![Case 9 - Request Approval and Rejection](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case9_approve_request.png)
+   ![Case 9 - Request Approval and Rejection](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case9_view_all_requests.png)
 
 ### Case 10: Fine Management
 
@@ -96,7 +98,7 @@ The **Library Management System** is a console-based application developed in th
 - **Expected Output:** The fine is added with Pending status. After payment, the fine status is displayed as Paid.
 - **Screenshot:**
 
-  ![Case 10 - Fine Management](screenshots/case10_fine_management.png)
+  ![Case 10 - Fine Management](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case10_fine_management.png)
 
 ### Case 11: Complaint and Suggestion Management
 
@@ -105,7 +107,8 @@ The **Library Management System** is a console-based application developed in th
 - **Expected Output:** The complaint is saved with Pending status. The administrator can accept it or reject it with a reason. The updated status is visible to the student.
 - **Screenshot:**
 
-  ![Case 11 - Complaint Management](screenshots/case11_complaint_management.png)
+  ![Case 11 - Complaint Management](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case11_complaint_admin.png)
+   ![Case 11 - Complaint Management](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case11_complaint_submitted.png)
 
 ### Case 12: Reports and Analytics
 
@@ -114,7 +117,7 @@ The **Library Management System** is a console-based application developed in th
 - **Expected Output:** The system displays transaction counts, student records, total/collected/pending fines, and the most borrowed book when borrowing records exist.
 - **Screenshot:**
 
-  ![Case 12 - Reports and Analytics](screenshots/case12_reports_analytics.png)
+  ![Case 12 - Reports and Analytics](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case12_reports_analytics.png)
 
 ### Case 13: Workflow Summary and Recent Activity
 
@@ -123,7 +126,7 @@ The **Library Management System** is a console-based application developed in th
 - **Expected Output:** The system separates completed, in-progress, and pending work; displays overdue information when a date is entered; and lists recent recorded activities.
 - **Screenshot:**
 
-  ![Case 13 - Workflow Summary](screenshots/case13_workflow_summary.png)
+  ![Case 13 - Workflow Summary](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case13_workflow_summary.png)
 
 ### Case 14: Input Validation and Error Handling
 
@@ -132,8 +135,10 @@ The **Library Management System** is a console-based application developed in th
 - **Expected Output:** The program displays a suitable error message, rejects invalid data, and asks for valid input again where supported. Date and time-slot input allow a limited number of attempts.
 - **Screenshot:**
 
-  ![Case 14 - Input Validation](screenshots/case14_input_validation.png)
+  ![Case 14 - Input Validation](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case14_input_validation_a.png)
 
+  ![Case 14 - Input Validation](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/main/case14_input_validation_b.png?raw=true)
+    ![Case 14 - Input Validation](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/main/case14_invalid_choice.png?raw=true)
 ### Case 15: File Handling and Data Persistence
 
 - **Description:** Tests whether the system saves records to a file and loads them after the program is closed and started again.
@@ -143,11 +148,11 @@ The **Library Management System** is a console-based application developed in th
 
   Project folder showing the saved data file `library_requests.dat` and the activity log `activity.txt`:
 
-  ![Case 15 - File Handling and Persistence](screenshots/case15_file_persistence.png)
+  ![Case 15 - File Handling and Persistence](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/main/case15_file_persistence.png?raw=true)
 
   Contents of `activity.txt` showing the recorded activity (student registered, requests received, student logged in):
 
-  ![Case 15 - Activity Log](screenshots/case15_activity_log.png)
+  ![Case 15 - Activity Log](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/main/case15_activity_log.png?raw=true)
 
 ## C. Instructions to Clone and Execute
 
