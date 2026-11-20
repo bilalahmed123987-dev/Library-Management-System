@@ -38,35 +38,35 @@ The **Library Management System** is a console-based application developed in th
 
   **1. Admin Login**
 
-  ![Admin Login](screenshots/case1_admin_login.png)
+  ![Admin Login](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/774ee0cce5d5378c69bf5d6d060121c09fa9b4af/screenshots/case1_admin_login.png)
 
   **2. Student Registration**
 
-  ![Student Registration](screenshots/case1_student_registration.png)
+  ![Student Registration](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/774ee0cce5d5378c69bf5d6d060121c09fa9b4af/screenshots/case1_student_registration.png)
 
   **3. Student Login**
 
-  ![Student Login](screenshots/case1_student_login.png)
+  ![Student Login](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/774ee0cce5d5378c69bf5d6d060121c09fa9b4af/screenshots/case1_student_login.png)
 
   **4. Book Administration**
 
-  ![Book Administration](screenshots/case1_book_administration_menu.png)
+  ![Book Administration](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/774ee0cce5d5378c69bf5d6d060121c09fa9b4af/screenshots/case1_book_administration_menu.png)
 
   **5. Book Issuing**
 
-  ![Book Issue](screenshots/case1_book_issue.png)
+  ![Book Issue](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/774ee0cce5d5378c69bf5d6d060121c09fa9b4af/screenshots/case1_book_issue.png)
 
   **6. Book Returning and Fine**
 
-  ![Book Return](screenshots/case1_book_return_and_fine.png)
+  ![Book Return](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/774ee0cce5d5378c69bf5d6d060121c09fa9b4af/screenshots/case1_book_return_and_fine.png)
 
   **7. Book Transaction History**
 
-  ![Transaction History](screenshots/case1_book_transaction_history.png)
+  ![Transaction History](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/774ee0cce5d5378c69bf5d6d060121c09fa9b4af/screenshots/case1_book_transaction_history.png)
 
   **8. Available Books**
 
-  ![Available Books](screenshots/case1_available_books.png)
+  ![Available Books](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/774ee0cce5d5378c69bf5d6d060121c09fa9b4af/screenshots/case1_available_books.png)
 
 
 ### Case 2: Student Requests, Room and Lab Booking, Request Approval and Fine Management
@@ -98,19 +98,19 @@ The **Library Management System** is a console-based application developed in th
 
   **1. Student Portal**
 
-  ![Student Portal](screenshots/case2_student_portal_menu.png)
+  ![Student Portal](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/774ee0cce5d5378c69bf5d6d060121c09fa9b4af/screenshots/case2_student_portal_menu.png)
 
   **2. Student Room and Lab Availability**
 
-  ![Room Availability](screenshots/case2_student_room_lab_availability.png)
+  ![Room Availability](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/774ee0cce5d5378c69bf5d6d060121c09fa9b4af/screenshots/case2_student_room_lab_availability.png)
 
   **3. Room Booking Request**
 
-  ![Room Booking Request](screenshots/case2_room_booking_request_submitted.png)
+  ![Room Booking Request](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/774ee0cce5d5378c69bf5d6d060121c09fa9b4af/screenshots/case2_room_booking_request_submitted.png)
 
   **4. Admin Room and Lab Management**
 
-  ![Room and Lab Management](screenshots/case2_admin_room_lab_management_menu.png)
+  ![Room and Lab Management](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/774ee0cce5d5378c69bf5d6d060121c09fa9b4af/screenshots/case2_admin_room_lab_management_menu.png)
 
   **5. Admin Request Approval**
 
@@ -118,11 +118,11 @@ The **Library Management System** is a console-based application developed in th
 
   **6. Student Request Records**
 
-  ![Student Request Records](screenshots/case2_student_request_records.png)
+  ![Student Request Records](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/774ee0cce5d5378c69bf5d6d060121c09fa9b4af/screenshots/case2_admin_request_approval.png)
 
   **7. Admin Fine Management Menu**
 
-  ![Fine Management](screenshots/admin_dashboard_and_fine_management_menu.png)
+  ![Fine Management]()
 
 
 ### Case 3: Complaint Management, Reports, Workflow Summary, Input Validation and File Handling
@@ -155,27 +155,27 @@ The **Library Management System** is a console-based application developed in th
 
   **1. Student Complaint Submission**
 
-  ![Student Complaint](screenshots/case3_student_complaint_submission.png)
+  ![Student Complaint](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/774ee0cce5d5378c69bf5d6d060121c09fa9b4af/screenshots/case3_student_complaint_submission.png)
 
   **2. Reports and Analytics**
 
-  ![Reports and Analytics](screenshots/case3_reports_and_analytics.png)
+  ![Reports and Analytics](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/774ee0cce5d5378c69bf5d6d060121c09fa9b4af/screenshots/case3_reports_and_analytics.png)
 
   **3. Workflow Summary and Date Validation**
 
-  ![Workflow Summary](screenshots/case3_workflow_and_invalid_date.png)
+  ![Workflow Summary](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/774ee0cce5d5378c69bf5d6d060121c09fa9b4af/screenshots/case3_workflow_and_invalid_date.png)
 
   **4. Student Portal Input Validation**
 
-  ![Input Validation](screenshots/case3_student_portal_invalid_choice.png)
+  ![Input Validation](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/774ee0cce5d5378c69bf5d6d060121c09fa9b4af/screenshots/case3_student_portal_invalid_choice.png)
 
   **5. Project Data Files**
 
-  ![Project Data Files](screenshots/case3_project_data_files.png)
+  ![Project Data Files](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/774ee0cce5d5378c69bf5d6d060121c09fa9b4af/screenshots/case3_project_data_files.png)
 
   **6. Activity Log**
 
-  ![Activity Log](screenshots/case3_activity_log.png)
+  ![Activity Log](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/774ee0cce5d5378c69bf5d6d060121c09fa9b4af/screenshots/case3_activity_log.png)
 
 ## C. Instructions to Clone and Execute
 
