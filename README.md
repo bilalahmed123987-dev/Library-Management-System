@@ -122,7 +122,7 @@ The **Library Management System** is a console-based application developed in th
 
   **7. Admin Fine Management Menu**
 
-  ![Fine Management]()
+  ![Fine Management](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/5f2d356f0669db2849d1cb9a827bfd22b0cd6a7c/screenshots/admin_dashboard_and_fine_management_menu.png)
 
 
 ### Case 3: Complaint Management, Reports, Workflow Summary, Input Validation and File Handling
