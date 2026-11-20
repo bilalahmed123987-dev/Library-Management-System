@@ -4,155 +4,178 @@
 
 The **Library Management System** is a console-based application developed in the C programming language for managing library operations in an educational institution. It provides separate Admin and Student portals and supports book and student records, book issuing and returning, room and computer-lab slot booking, fines, complaints and suggestions, student requests, reports, workflow summaries, and activity tracking. The project demonstrates the use of structures, arrays, functions, pointers, conditional statements, loops, string handling, and file handling in C. Records are saved in a binary data file so that information can be loaded again when the program is restarted.
 
+
 ## B. Features & Test Cases (Execution Scenarios)
 
-> **Screenshot note:** Put the actual terminal screenshots in the `screenshots` folder. Keep the filenames below unchanged, or update the image paths in this README if you use different names. Capture the program output after performing each test; do not use screenshots of source code as execution evidence.
+### Case 1: User Authentication, Student Registration and Book Management
 
-### Case 1: Main Menu and Admin Login
+- **Description:** This test case verifies administrator authentication, student registration and login, book administration, book issuing, book returning, book availability, and transaction history.
 
-- **Description:** Checks the main portal selection and verifies that the administrator can log in with valid credentials. The program also limits incorrect login attempts.
-- **Inputs:** Select `1`; username `admin`; password `1234`.
-- **Expected Output:** Admin login succeeds and the Admin Panel is displayed. Incorrect credentials display an error and remaining attempts.
-- **Screenshot:**
+- **Inputs:**
+  - Admin username: `admin`
+  - Admin password: `1234`
+  - Student name: `Bilal Ahmed`
+  - Department: `CS`
+  - Semester: `2`
+  - Contact: `03001234567`
+  - Student password: `bilal`
+  - Book ID: `1`
+  - Student ID: `1013`
+  - Issue date: `09-12-2026`
+  - Due date: `31-12-2026`
+  - Return date: `01-01-2027`
 
-  ![Case 1 - Admin Login](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/3bc6c5e368cb73b382edaa87bf9a709612d36834/case1_admin_login.png)
+- **Expected Output:**
+  - Administrator successfully logs in and accesses the Admin Panel.
+  - Student registration generates a unique Student ID.
+  - The registered student successfully logs in to the Student Portal.
+  - The administrator can access book administration options.
+  - Books can be issued and returned using valid student and book IDs.
+  - Available book records and transaction history are displayed.
+  - Late book returns are identified and fines are calculated according to the system rules.
 
-### Case 2: Student Registration and Login
+- **Screenshots:**
 
-- **Description:** Tests new student registration, password confirmation, student ID generation, and student login.
-- **Inputs:** Select Student Portal, then registration. Example: name `Ahmed Khan`, department `Computer Science`, semester `2`, contact `03001234567`, password `ahmed123`, and matching confirmation. Then log in using the generated ID and password.
-- **Expected Output:** Registration succeeds, a student ID is displayed, and valid login opens the Student Dashboard and Student Portal.
-- **Screenshot:**
+  **1. Admin Login**
 
-  ![Case 2 - Student Registration and Login](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/main/case2_student_registration.png?raw=true)
+  ![Admin Login](screenshots/case1_admin_login.png)
 
-### Case 3: Book Administration
+  **2. Student Registration**
 
-- **Description:** Tests adding, displaying, searching, updating, and removing book records.
-- **Inputs:** Admin Panel → Book Administration. Example new book: ID `50`, title `C Basics`, author `John Smith`, category `Computer`, copies `5`. Search and update using ID `50`.
-- **Expected Output:** The book is added and displayed with its details and available copies. Search and update show the correct record. A book that has issued copies cannot be removed.
-- **Screenshot:**
+  ![Student Registration](screenshots/case1_student_registration.png)
 
-  ![Case 3 - Book Administration](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case3_book_administration.png)
+  **3. Student Login**
 
-### Case 4: Book Issue and Return
+  ![Student Login](screenshots/case1_student_login.png)
 
-- **Description:** Tests issuing an available book to a registered student and returning that book.
-- **Inputs:** Admin Panel → Book Administration → Issue Book. Example: student ID `1001`, book ID `1`, issue date `10-11-2026`, due date `17-11-2026`. For return, enter the same student and book IDs and a return date such as `15-11-2026`.
-- **Expected Output:** The book is issued successfully and its available-copy count decreases. On return, the transaction is marked as returned and the available-copy count increases. A late return creates a fine at Rs. 10 per late day.
-- **Screenshot:**
+  **4. Book Administration**
 
-  ![Case 4 - Book Issue and Return](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case4_book_issue_return.png)
+  ![Book Administration](screenshots/case1_book_administration_menu.png)
 
-### Case 5: Available Books and Transaction Records
+  **5. Book Issuing**
 
-- **Description:** Checks available-book listing and the issue history, currently issued books, returned books, and overdue-book records.
-- **Inputs:** Admin Panel → Book Administration. Use the available-books and transaction-history menu options. Enter a valid current date when checking overdue books.
-- **Expected Output:** The program displays the matching books and transaction records, or a message when no matching records exist.
-- **Screenshot:**
+  ![Book Issue](screenshots/case1_book_issue.png)
 
-  ![Case 5 - Book Availability and History](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case5_book_availability_history.png)
+  **6. Book Returning and Fine**
 
-### Case 6: Student Records Management
+  ![Book Return](screenshots/case1_book_return_and_fine.png)
 
-- **Description:** Tests adding, displaying, searching, updating, and removing student records, as well as viewing a student's borrowing history.
-- **Inputs:** Admin Panel → Student Administration. Example: student ID `1100`, name `Sara Ali`, department `Software Engineering`, semester `3`, contact `03001234567`, password `sara123`.
-- **Expected Output:** Student details are saved and displayed correctly. Search and update work for an existing student. A student with an active issued book cannot be removed until the book is returned.
-- **Screenshot:**
+  **7. Book Transaction History**
 
-  ![Case 6 - Student Administration](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case6_student_administration.png)
+  ![Transaction History](screenshots/case1_book_transaction_history.png)
 
-### Case 7: Room and Computer-Lab Management
+  **8. Available Books**
 
-- **Description:** Tests adding rooms/labs, viewing their time slots, booking a free slot, and releasing a booked slot.
-- **Inputs:** Admin Panel → Room & Lab Monitoring. Example: room ID `301`, name `Computer Lab A`, capacity `30`, type `2` for Computer Lab. Select a displayed slot such as `09:00 - 10:00`.
-- **Expected Output:** The room/lab is added. Free and booked slots are displayed. A free slot can be booked, and a booked slot can be released. The program prevents booking an already-booked slot.
-- **Screenshot:**
+  ![Available Books](screenshots/case1_available_books.png)
 
-  ![Case 7 - Room and Lab Management](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case7_room_lab_management.png)
 
-### Case 8: Student Book and Room Requests
+### Case 2: Student Requests, Room and Lab Booking, Request Approval and Fine Management
 
-- **Description:** Tests submitting book-issue and room/lab-booking requests from the Student Portal and checking their status.
-- **Inputs:** Log in as a student. Request an available book by its ID. For a room request, select a room ID and a free time slot. Open View My Request Status.
-- **Expected Output:** A request ID is generated and its status is shown as Pending until an administrator processes it. Duplicate pending room-slot requests are prevented.
-- **Screenshot:**
+- **Description:** This test case verifies student access to available rooms and labs, room booking requests, administrator room and lab management, request approval, student request records, and fine management.
 
-  ![Case 8 - Student Requests](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case8_book_request.png)
-  ![Case 8 - Student Requests](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case8_student_dashboard_pending.png)
+- **Inputs:**
+  - Student ID: `1013`
+  - Student Portal option: `3`
+  - Room/Lab ID: `110`
+  - Room category: `Computer Labs`
+  - Selected time slot: `10:00 - 11:00`
+  - Generated Request ID: `5`
+  - Request management option: `3`
+  - Approval choice: `1`
 
-### Case 9: Admin Request Approval and Rejection
+- **Expected Output:**
+  - The Student Portal displays available options.
+  - Students can view available rooms and computer labs.
+  - Available room and lab time slots are displayed.
+  - Students can submit room and lab booking requests.
+  - The system generates a request ID.
+  - The administrator can access room and lab management.
+  - The administrator can view and process student requests.
+  - Request records can be viewed from the Student Portal.
+  - The Fine Management module provides options for managing student fines and payments.
 
-- **Description:** Tests viewing all or pending student requests and approving or rejecting a request.
-- **Inputs:** Admin Panel → Student Request Management. Enter an existing pending request ID and choose `1` to approve or `2` to reject. For a book request approval, enter valid issue and due dates when prompted.
-- **Expected Output:** The request status changes to Approved or Rejected. An approved book request creates an issue transaction; an approved room request books its selected slot.
-- **Screenshot:**
+- **Screenshots:**
 
-  ![Case 9 - Request Approval and Rejection](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case9_approve_request.png)
-   ![Case 9 - Request Approval and Rejection](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case9_view_all_requests.png)
+  **1. Student Portal**
 
-### Case 10: Fine Management
+  ![Student Portal](screenshots/case2_student_portal_menu.png)
 
-- **Description:** Tests adding a fine, viewing fine records, and recording payment of pending fines.
-- **Inputs:** Admin Panel → Penalty & Fine Management. Example: student ID `1001`, amount `100`, reason `Late return`.
-- **Expected Output:** The fine is added with Pending status. After payment, the fine status is displayed as Paid.
-- **Screenshot:**
+  **2. Student Room and Lab Availability**
 
-  ![Case 10 - Fine Management](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case10_fine_management.png)
+  ![Room Availability](screenshots/case2_student_room_lab_availability.png)
 
-### Case 11: Complaint and Suggestion Management
+  **3. Room Booking Request**
 
-- **Description:** Tests student complaint/suggestion submission and the administrator's ability to accept or reject it.
-- **Inputs:** Log in as a student and submit a message such as `Please add more programming books.` Then, as admin, open Complaint & Suggestion Management and process the complaint ID.
-- **Expected Output:** The complaint is saved with Pending status. The administrator can accept it or reject it with a reason. The updated status is visible to the student.
-- **Screenshot:**
+  ![Room Booking Request](screenshots/case2_room_booking_request_submitted.png)
 
-  ![Case 11 - Complaint Management](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case11_complaint_admin.png)
-   ![Case 11 - Complaint Management](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case11_complaint_submitted.png)
+  **4. Admin Room and Lab Management**
 
-### Case 12: Reports and Analytics
+  ![Room and Lab Management](screenshots/case2_admin_room_lab_management_menu.png)
 
-- **Description:** Tests the administrative reports for book issues, student records, fine collection, and the most borrowed book.
-- **Inputs:** Admin Panel → Report & Analytics. Select each report option after creating relevant sample records.
-- **Expected Output:** The system displays transaction counts, student records, total/collected/pending fines, and the most borrowed book when borrowing records exist.
-- **Screenshot:**
+  **5. Admin Request Approval**
 
-  ![Case 12 - Reports and Analytics](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case12_reports_analytics.png)
+  ![Request Approval](screenshots/case2_admin_request_approval.png)
 
-### Case 13: Workflow Summary and Recent Activity
+  **6. Student Request Records**
 
-- **Description:** Tests the overall workflow summary, completed work, current work, pending work, and recent activity log.
-- **Inputs:** Admin Panel → Workflow Summary. Enter a valid date in `DD-MM-YYYY` format and open the summary options.
-- **Expected Output:** The system separates completed, in-progress, and pending work; displays overdue information when a date is entered; and lists recent recorded activities.
-- **Screenshot:**
+  ![Student Request Records](screenshots/case2_student_request_records.png)
 
-  ![Case 13 - Workflow Summary](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case13_workflow_summary.png)
+  **7. Admin Fine Management Menu**
 
-### Case 14: Input Validation and Error Handling
+  ![Fine Management](screenshots/admin_dashboard_and_fine_management_menu.png)
 
-- **Description:** Checks how the program handles invalid menu choices, non-numeric menu input, invalid dates, invalid time slots, incorrect login details, and unavailable records.
-- **Inputs:** Enter a letter at a numeric menu prompt, an invalid date such as `31-02-2026`, an invalid time slot, an incorrect ID, or incorrect login credentials.
-- **Expected Output:** The program displays a suitable error message, rejects invalid data, and asks for valid input again where supported. Date and time-slot input allow a limited number of attempts.
-- **Screenshot:**
 
-  ![Case 14 - Input Validation](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/9d805e3e9a730ee2ffedea12daf09a33e38ec2f8/case14_input_validation_a.png)
+### Case 3: Complaint Management, Reports, Workflow Summary, Input Validation and File Handling
 
-  ![Case 14 - Input Validation](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/main/case14_input_validation_b.png?raw=true)
-    ![Case 14 - Input Validation](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/main/case14_invalid_choice.png?raw=true)
-### Case 15: File Handling and Data Persistence
+- **Description:** This test case verifies student complaint submission, reports and analytics, workflow monitoring, invalid input handling, and application data storage through file handling.
 
-- **Description:** Tests whether the system saves records to a file and loads them after the program is closed and started again.
-- **Inputs:** Add a book or student, or create a request. Exit the program normally and run it again.
-- **Expected Output:** Previously saved records remain available after restarting. The program uses `library_requests.dat` for stored application data and `activity.txt` for activity logging.
-- **Screenshot:**
+- **Inputs:**
+  - Student ID: `1013`
+  - Student Portal option: `4`
+  - Complaint: `Please add more programming books.`
+  - Generated Complaint ID: `2`
+  - Report option: `2`
+  - Invalid menu choice: `11`
+  - Invalid date: `11-20-2026`
+  - Valid date: `11-11-2026`
+  - Data file: `library_requests.dat`
+  - Activity file: `activity.txt`
 
-  Project folder showing the saved data file `library_requests.dat` and the activity log `activity.txt`:
+- **Expected Output:**
+  - Students can submit complaints and suggestions.
+  - The system generates a complaint ID.
+  - Reports and Analytics displays available book, student, and fine information.
+  - Workflow Summary displays workflow information and recent activities.
+  - Invalid menu choices and dates are handled with appropriate error messages.
+  - Previously stored application data is maintained through file handling.
+  - Activity records are stored in `activity.txt`.
+  - Application data is stored in `library_requests.dat`.
 
-  ![Case 15 - File Handling and Persistence](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/main/case15_file_persistence.png?raw=true)
+- **Screenshots:**
 
-  Contents of `activity.txt` showing the recorded activity (student registered, requests received, student logged in):
+  **1. Student Complaint Submission**
 
-  ![Case 15 - Activity Log](https://github.com/bilalahmed123987-dev/Library-Management-System/blob/main/case15_activity_log.png?raw=true)
+  ![Student Complaint](screenshots/case3_student_complaint_submission.png)
+
+  **2. Reports and Analytics**
+
+  ![Reports and Analytics](screenshots/case3_reports_and_analytics.png)
+
+  **3. Workflow Summary and Date Validation**
+
+  ![Workflow Summary](screenshots/case3_workflow_and_invalid_date.png)
+
+  **4. Student Portal Input Validation**
+
+  ![Input Validation](screenshots/case3_student_portal_invalid_choice.png)
+
+  **5. Project Data Files**
+
+  ![Project Data Files](screenshots/case3_project_data_files.png)
+
+  **6. Activity Log**
+
+  ![Activity Log](screenshots/case3_activity_log.png)
 
 ## C. Instructions to Clone and Execute
 
